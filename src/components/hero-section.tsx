@@ -84,7 +84,7 @@ export default function HeroSection() {
                       key={1}
                       className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
                     >
-                      <Link to="#projects">
+                      <a href="#projects">
                         <Button
                           asChild
                           size="lg"
@@ -92,7 +92,7 @@ export default function HeroSection() {
                         >
                           <span className="text-nowrap">View My Work</span>
                         </Button>
-                      </Link>
+                      </a>
                     </div>
                   </AnimatedGroup>
                 </div>
