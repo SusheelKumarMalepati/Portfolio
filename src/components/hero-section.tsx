@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
