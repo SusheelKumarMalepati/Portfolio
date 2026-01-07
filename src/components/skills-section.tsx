@@ -18,11 +18,11 @@ const skillCategories = [
     },
     {
         title: 'Programming Languages',
-        skills: ['Java', 'Python', 'C++', 'C', 'HTML', 'CSS', 'JavaScript'],
+        skills: ['Java', 'Python', 'C++', 'C', 'HTML' , 'JavaScript'],
     },
     {
         title: 'Databases',
-        skills: ['MySQL', 'DynamoDB', 'H2 Database'],
+        skills: ['MySQL', 'DynamoDB', 'H2 Database' , 'PostgreSQL' , 'Oracle 19c database'],
     },
     {
         title: 'Tools & Platforms',
@@ -30,7 +30,6 @@ const skillCategories = [
             'SoapUI',
             'Swagger',
             'Apache Tomcat',
-            'GitHub Actions',
             'BitBucket',
         ],
     },
