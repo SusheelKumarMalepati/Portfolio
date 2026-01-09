@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
@@ -84,15 +83,15 @@ export default function HeroSection() {
                       key={1}
                       className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
                     >
-                      <Button
-                        asChild
-                        size="lg"
-                        className="rounded-xl px-6 text-base"
-                      >
-                        <Link to="#projects">
+                      <a href="#projects">
+                        <Button
+                          asChild
+                          size="lg"
+                          className="rounded-xl px-6 text-base"
+                        >
                           <span className="text-nowrap">View My Work</span>
-                        </Link>
-                      </Button>
+                        </Button>
+                      </a>
                     </div>
                   </AnimatedGroup>
                 </div>
@@ -202,7 +201,7 @@ export default function HeroSection() {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1J8cy8bUFgff4YAgBsIkYiQbgpC2c2wV3/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1rgNxrTlcfKaaeym5f0NzTEktZsZ7iMPX/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center transition-transform hover:scale-110"
