@@ -7,6 +7,13 @@ import Footer from "@/components/footer";
 
 const allProjects = [
   {
+    title: "JavaGeniusAI",
+    description:
+      "An AI-powered Java learning platform with interactive coding challenges and real-time feedback.",
+    tags: ["Java", "AI", "Spring Boot", "React"],
+    url: "https://javageniusai.netlify.app/",
+  },
+  {
     title: "Occasio",
     description:
       "Full-stack event management platform with JWT-based login, event creation, and ticket booking.",
@@ -120,6 +127,114 @@ const allProjects = [
       "A repository for tasks and projects completed during the Oasis Infobyte (OIBSIP) Internship program.",
     tags: ["Web Dev", "Internship"],
   },
+  {
+    title: "Rock vs Mine Prediction",
+    description:
+      "ML model to classify sonar signals as rocks or mines using supervised learning.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Diabetes Prediction",
+    description:
+      "Predicts diabetes occurrence based on health metrics using classification algorithms.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "House Price Prediction",
+    description:
+      "Regression model to predict house prices based on various features and location data.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Fake News Prediction",
+    description:
+      "NLP-based classifier to detect fake news articles using text analysis.",
+    tags: ["Python", "NLP"],
+  },
+  {
+    title: "Loan Status Prediction",
+    description:
+      "Predicts loan approval status based on applicant information and credit history.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Wine Quality Prediction",
+    description:
+      "Classification model to predict wine quality based on chemical properties.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Car Price Prediction",
+    description:
+      "Regression model to estimate car prices based on specifications and market data.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Gold Price Prediction",
+    description:
+      "Time series forecasting model to predict gold prices based on historical trends.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Heart Disease Prediction",
+    description:
+      "Classification model to predict heart disease risk using medical parameters.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Credit Card Fraud Detection",
+    description:
+      "Anomaly detection system to identify fraudulent credit card transactions.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Medical Insurance Cost Prediction",
+    description:
+      "Regression model to predict medical insurance costs based on personal factors.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "BigMart Sales Prediction",
+    description:
+      "Predicts product sales for BigMart stores using historical sales data.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Customer Segmentation",
+    description:
+      "Clustering algorithm to segment customers based on purchasing behavior.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Parkinson's Disease Prediction",
+    description:
+      "Classification model to detect Parkinson's disease from voice measurements.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Titanic Survival Prediction",
+    description:
+      "Classic ML problem predicting passenger survival on the Titanic.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Calorie Burnt Prediction",
+    description:
+      "Regression model to predict calories burned during exercise based on activity metrics.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Movie Recommendation System",
+    description:
+      "Collaborative filtering system to recommend movies based on user preferences.",
+    tags: ["Python", "ML"],
+  },
+  {
+    title: "Breast Cancer Classification",
+    description:
+      "Binary classification model to detect breast cancer from medical imaging data.",
+    tags: ["Python", "ML"],
+  },
 ];
 
 export default function ProjectsPage() {
@@ -165,31 +280,65 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.05 * index, duration: 0.5 }}
-                className="group relative bg-card border border-border rounded-2xl p-6 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
               >
-                <div className="flex flex-col h-full">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      {project.title}
-                    </h3>
-                    <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </div>
+                {project.url ? (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative bg-card border border-border rounded-2xl p-6 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 block h-full cursor-pointer"
+                  >
+                    <div className="flex flex-col h-full">
+                      <div className="flex items-start justify-between mb-4">
+                        <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                          {project.title}
+                        </h3>
+                        <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      </div>
 
-                  <p className="text-muted-foreground text-sm mb-6 flex-grow">
-                    {project.description}
-                  </p>
+                      <p className="text-muted-foreground text-sm mb-6 flex-grow">
+                        {project.description}
+                      </p>
 
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, tagIndex) => (
+                          <span
+                            key={tagIndex}
+                            className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div className="group relative bg-card border border-border rounded-2xl p-6 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full">
+                    <div className="flex flex-col h-full">
+                      <div className="flex items-start justify-between mb-4">
+                        <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                          {project.title}
+                        </h3>
+                        <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      </div>
+
+                      <p className="text-muted-foreground text-sm mb-6 flex-grow">
+                        {project.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, tagIndex) => (
+                          <span
+                            key={tagIndex}
+                            className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                )}
               </motion.div>
             ))}
           </div>
