@@ -18,8 +18,8 @@ export default function MainPage() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <ProjectsSection />
       <ExperienceSection />
+      <ProjectsSection />
       <CertificationsSection />
       <EducationSection />
       <Footer />
