@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { HeroHeader } from "./header";
+import UpdateTicker from "./update-ticker";
 import developerSkills from "@/assets/animations/developer skills.json";
 import profileImage from "@/assets/images/image.png";
 
@@ -30,6 +31,7 @@ export default function HeroSection() {
   return (
     <>
       <HeroHeader />
+
       <main className="overflow-hidden">
         <div
           aria-hidden
@@ -94,6 +96,7 @@ export default function HeroSection() {
                       </a>
                     </div>
                   </AnimatedGroup>
+                  <UpdateTicker />
                 </div>
 
                 <AnimatedGroup
