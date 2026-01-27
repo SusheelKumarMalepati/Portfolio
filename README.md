@@ -1,73 +1,120 @@
-# React + TypeScript + Vite
+# Portfolio - Malepati Susheel Kumar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Banner](src/assets/images/image.png)
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to my personal portfolio website! This project showcases my professional journey, skills, projects, and certifications. It is built as a modern, responsive, and interactive web application using the latest frontend technologies.
 
-## React Compiler
+**Live Demo:** [Insert Live Link Here if available]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 👨‍💻 About Me
 
-## Expanding the ESLint configuration
+**Malepati Susheel Kumar**
+*Dynamic Software Developer | Java, SpringBoot, Node.js, Machine Learning, AWS Expert*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+I am a Computer Science and Engineering graduate with strong skills in backend development using Java, Spring Boot, and Node.js. I am proficient in building REST APIs, deploying applications on AWS, and implementing machine learning models. I have a passion for building innovative solutions and collaborating with teams to deliver high-quality software.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This project is built with:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   **Frontend Framework:** [React](https://react.dev/)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Build Tool:** [Vite](https://vitejs.dev/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Animations:** [Motion](https://motion.dev/) (formerly Framer Motion), [Lottie React](https://lottiereact.com/)
+-   **Icons:** [Lucide React](https://lucide.dev/)
+-   **UI Components:** Custom components, Radix UI primitives
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-   **Interactive Hero Section:** Engaging introduction with animated text and profile visuals.
+-   **Responsive Design:** Fully optimized for desktops, tablets, and mobile devices.
+-   **Project Showcase:** Detailed cards for my key projects with links and tags.
+-   **Experience Timeline:** A visual journey of my professional work history.
+-   **Skills Cloud:** Interactive 3D tag cloud displaying my technical skillset.
+-   **Certifications Gallery:** Grid view of my professional certifications and badges.
+-   **Smooth Animations:** Page transitions and scroll animations for a polished user experience.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💼 Experience
+
+-   **Backend Developer** @ **TheFGH** (Apr 2025 – Jun 2025) _[Remote, Contract]_
+    -   Built and deployed backend services using Node.js and Express.js (10K+ monthly requests).
+    -   Collaborated in an Agile team to deliver sprint-based features.
+
+-   **Java Development Team Lead (Intern)** @ **Ceeras IT Services** (Sep 2024 – Mar 2025) _[Remote, Internship]_
+    -   Led a team to develop "My Desk", an employee management web app.
+    -   Designed REST APIs and integrated Spring Security with RBAC.
+
+-   **Software Developer Intern** @ **Tekie's Zen LLC** (Apr 2024 – Jul 2024) _[Remote, Internship]_
+    -   Deployed serverless backend features using Node.js on AWS Lambda and S3.
+    -   Refactored code and improved API response times by 25%.
+
+## 🚀 Projects
+
+Here are some of the featured projects included in the portfolio:
+
+-   **JavaGeniusAI:** AI-powered Java learning platform with interactive coding challenges.
+-   **Occasio:** Full-stack event management platform with JWT auth and ticketing.
+-   **FoodOrderingManagement:** Backend system for a multi-vendor food delivery platform.
+-   **face_mask_detection:** ML project for real-time face mask detection using OpenCV.
+-   **TimeSheet:** Employee timesheet management system.
+-   **BankProject:** Java-based ATM system simulation.
+
+## 🔧 Skills
+
+-   **Languages:** Java, Python, C++, C, HTML, JavaScript
+-   **Technologies:** Spring Boot, Node.js, Express.js, ReactJS, Machine Learning, AWS
+-   **Databases:** MySQL, DynamoDB, PostgreSQL, Oracle 19c, H2
+-   **Tools:** Git, SoapUI, Swagger, Apache Tomcat, BitBucket
+
+## 📜 Certifications
+
+-   Oracle Cloud Infrastructure Certified Foundations Associate
+-   Oracle Data Platform Certified Foundations Associate
+-   Oracle APEX Cloud Developer Certified Professional
+-   MySQL Certified Associate
+-   AWS Certified Solutions Architect - Associate (Exam Prep)
+-   Postman API Fundamentals Student Expert
+-   And more...
+
+## 💻 Getting Started
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+
+-   Node.js (v18 or higher)
+-   npm or yarn
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/SusheelKumarMalepati/Portfolio.git
+    cd Portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in browser:**
+    Open [http://localhost:5173](http://localhost:5173) to view the application.
+
+## 📬 Contact
+
+-   **LinkedIn:** [Susheel Kumar Malepati](https://www.linkedin.com/in/susheel-kumar-malepati-782506270/)
+-   **GitHub:** [SusheelKumarMalepati](https://github.com/SusheelKumarMalepati)
+-   **Email:** [susheelmalepati2004@gmail.com](mailto:susheelmalepati2004@gmail.com)
+
+---
+
+© 2025 Malepati Susheel Kumar. All Rights Reserved.
