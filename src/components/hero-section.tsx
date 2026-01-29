@@ -204,7 +204,7 @@ export default function HeroSection() {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1rgNxrTlcfKaaeym5f0NzTEktZsZ7iMPX/view?usp=sharing"
+                href="https://drive.google.com/file/d/1zrbDpo4qdHQQtl0kkwKXHX6uElzN2WiH/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center transition-transform hover:scale-110"
